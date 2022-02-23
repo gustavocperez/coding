@@ -3,14 +3,13 @@ from datetime import date
 
 data_atual = date.today()
 
-vendedores2 = [("Gustavo Perez","gustavo.perez@msfoods.agr.br")]
+vendedores2 = []
 
-vendedores = [("Felipe Santana","felipe.santana@msfoods.agr.br"),("Marcos Manso","marcos.manso@msfoods.agr.br"),("Andrei Almeida","andrei.almeida@msfoods.agr.br"),
-              ("Anderson Brito","anderson.brito@msfoods.agr.br"),("Felipe Fagundes","felipe.correa@msfoods.agr.br"),("Leandro Tenalia","leandro.tenalia@msfoods.agr.br")]
+vendedores = []
 
-roberta = [("Roberta Abrami","roberta@msfoods.agr.br")]
-leandro = [("Leandro Tenalia","leandro.tenalia@msfoods.agr.br")]
-gaby = [("Gabrielly Villas Ruins", "contato@msfoods.agr.br")]
+roberta = []
+leandro = []
+gaby = []
 
 j = 0
 for i in vendedores:
@@ -54,7 +53,7 @@ email.HTMLBody = f"""
 
 <p>Atenciosamente Gustavo Perez!</p>
 """
-anexo = "C://Users/Tecnofoods/Desktop/Resumos/ResumoCoord/Resumo Geral.xlsx"
+anexo = "C://Users/"
 email.Attachments.Add(anexo)
 
 email.Send()
